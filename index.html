@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>🔥 Oferta Exclusiva • Flor3D.shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(145deg, #0a2f0f 0%, #051a07 100%);
+      font-family: 'Segoe UI', 'Poppins', Roboto, sans-serif;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .container {
+      max-width: 520px;
+      width: 100%;
+      margin: 20px auto;
+      background: white;
+      border-radius: 48px;
+      overflow: hidden;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+    }
+    .header {
+      background: #ff7b2c;
+      padding: 18px 20px;
+      text-align: center;
+      color: white;
+    }
+    .header span {
+      font-size: 28px;
+      font-weight: 800;
+      background: white;
+      color: #ff7b2c;
+      padding: 4px 12px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .header p {
+      font-size: 14px;
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+    .content {
+      padding: 32px 28px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #1f4f1f;
+      margin-bottom: 12px;
+    }
+    .destaque-preco {
+      background: #fff3e0;
+      padding: 14px;
+      border-radius: 28px;
+      text-align: center;
+      margin: 20px 0;
+      border: 1px dashed #ff7b2c;
+    }
+    .timer-box {
+      background: #1e2a1e;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 60px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .timer {
+      font-size: 32px;
+      font-family: monospace;
+      letter-spacing: 4px;
+      background: black;
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 50px;
+    }
+    input {
+      width: 100%;
+      padding: 15px 18px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 60px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      background: linear-gradient(95deg, #2e7d32, #1b5e20);
+      border: none;
+      padding: 16px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 60px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 0 #0a3b0a;
+      transition: 0.1s;
+    }
+    button:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #0a3b0a;
+    }
+    .depoimento {
+      background: #f4f9f4;
+      padding: 18px;
+      border-radius: 24px;
+      margin: 25px 0;
+      font-style: italic;
+      border-left: 5px solid #ff7b2c;
+    }
+    .selo {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777;
+    }
+    /* Pop-up que aparece após 10 segundos */
+    .popup-tempo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      text-align: center;
+      z-index: 1000;
+      max-width: 280px;
+      display: none;
+      border: 2px solid #25D366;
+    }
+    .popup-tempo.show {
+      display: block;
+      animation: fadeInUp 0.5s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .popup-tempo a {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    .fechar-popup-tempo {
+      position: absolute;
+      top: 5px;
+      right: 12px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #888;
+    }
+    /* Botão flutuante do WhatsApp (sempre visível) */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      background: #25D366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    🎁 <strong>ÚLTIMAS VAGAS</strong> 🎁
+    <span>-10% OFF</span>
+    <p>⏳ Restam apenas 7 vagas com desconto especial</p>
+  </div>
+  <div class="content">
+    <h1>🔥 Não perca essa chance única!</h1>
+    <p style="margin-bottom: 12px;">Cadastre-se agora e garanta <strong>10% de desconto</strong> na sua primeira compra na Flor3D.</p>
+    <div class="timer-box">
+      ⏰ OFERTA EXPIRA EM:<br>
+      <div class="timer" id="cronometro">15:00</div>
+    </div>
+    <div class="destaque-preco">
+      🚀 <strong>BENEFÍCIO EXCLUSIVO</strong> 🚀<br>
+      • Cupom de <strong>10% OFF</strong> enviado no seu e-mail.<br>
+      • <u>Frete grátis</u> para compras acima de R$ 99.<br>
+      • Prioridade no atendimento via WhatsApp.
+    </div>
+    <form id="formLead">
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu WhatsApp com DDD (ex: 13999999999)" required>
+      <button type="submit">✅ QUERO MEU DESCONTO AGORA</button>
+      <div id="loadingMsg" style="display:none; text-align:center; margin-top:12px; color:#2e7d32;">Enviando... você será redirecionado em instantes</div>
+    </form>
+    <div class="depoimento">
+      ⭐⭐⭐⭐⭐ <br>
+      <em>"Me cadastrei ontem e já recebi o código de desconto por e-mail. Site muito confiável!"</em><br>
+      <strong>— Mariana S. (cliente verificada)</strong>
+    </div>
+    <div class="selo">
+      🔒 Dados seguros • Compra protegida • Suporte rápido
+    </div>
+  </div>
+</div>
+
+<!-- POPUP QUE APARECE APÓS 10 SEGUNDOS -->
+<div id="popup10s" class="popup-tempo">
+  <span class="fechar-popup-tempo" id="closePopup10s">✖</span>
+  <p>⏳ <strong>Espere! Não vá embora...</strong></p>
+  <p>✋ Posso liberar <strong>frete grátis</strong> para você agora mesmo?</p>
+  <a href="#" id="whatsappPopupLink">📲 FALAR NO WHATSAPP AGORA</a>
+  <p style="font-size: 11px; margin-top: 8px;">Atendimento prioritário via WhatsApp</p>
+</div>
+
+<!-- BOTÃO FLUTUANTE DO WHATSAPP (sempre visível) -->
+<a href="#" id="whatsappFloatLink" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<script>
+  // ---------- CRONÔMETRO (15 minutos) ----------
+  let tempo = 15 * 60;
+  const cronoElement = document.getElementById('cronometro');
+  function atualizarCronometro() {
+    let minutos = Math.floor(tempo / 60);
+    let segundos = tempo % 60;
+    cronoElement.innerText = `${minutos.toString().padStart(2,'0')}:${segundos.toString().padStart(2,'0')}`;
+    if (tempo <= 0) {
+      cronoElement.innerText = "00:00";
+      clearInterval(intervaloCrono);
+    } else {
+      tempo--;
+    }
+  }
+  const intervaloCrono = setInterval(atualizarCronometro, 1000);
+  atualizarCronometro();
+
+  // ---------- FORMULÁRIO + REDIRECIONAMENTO PARA flor3d.shop ----------
+  const form = document.getElementById('formLead');
+  const loadingMsgDiv = document.getElementById('loadingMsg');
+
+  form.addEventListener('submit', async function(evento) {
+    evento.preventDefault();
+    const whats = document.getElementById('whatsapp').value.replace(/\D/g, '');
+    if (whats.length < 10) {
+      alert("Por favor, digite um número de WhatsApp válido com DDD (ex: 13999999999)");
+      return;
+    }
+    loadingMsgDiv.style.display = 'block';
+    const dados = new FormData(form);
+    const url = 'https://formspree.io/f/xykowovy';
+    try {
+      await fetch(url, { method: 'POST', body: dados, headers: { 'Accept': 'application/json' } });
+    } catch(e) { console.log("erro no fetch, mas redirecionará"); }
+    window.location.href = 'https://flor3d.shop';
+  });
+
+  // ---------- POPUP APÓS 10 SEGUNDOS ----------
+  setTimeout(function() {
+    const popup = document.getElementById('popup10s');
+    popup.classList.add('show');
+  }, 10000); // 10 segundos
+
+  // Fechar popup
+  document.getElementById('closePopup10s').addEventListener('click', function() {
+    document.getElementById('popup10s').classList.remove('show');
+  });
+
+  // ---------- FUNÇÃO UNIVERSAL PARA ABRIR WHATSAPP (APP + FALLBACK) ----------
+  const numeroWhats = "5513996710855";
+  const mensagem = "Olá! Vi a oferta especial e quero garantir meu desconto antes que acabe!";
+  const mensagemCodificada = encodeURIComponent(mensagem);
+
+  // Links: tenta o app primeiro, depois fallback para web
+  const linkAppWhats = `whatsapp://send?phone=${numeroWhats}&text=${mensagemCodificada}`;
+  const linkWebWhats = `https://web.whatsapp.com/send?phone=${numeroWhats}&text=${mensagemCodificada}`;
+  const linkApiWhats = `https://api.whatsapp.com/send?phone=${numeroWhats}&text=${mensagemCodificada}`; // fallback extra
+
+  function abrirWhatsApp() {
+    // Cria um link invisível para tentar abrir o app
+    const linkApp = document.createElement('a');
+    linkApp.href = linkAppWhats;
+    linkApp.target = '_blank';
+    linkApp.style.display = 'none';
+    document.body.appendChild(linkApp);
+    linkApp.click();
+    document.body.removeChild(linkApp);
+
+    // Fallback após 2 segundos: tenta web.whatsapp.com
+    setTimeout(function() {
+      window.open(linkWebWhats, '_blank');
+    }, 2000);
+    
+    // Fallback extra após 3 segundos (caso o web também falhe, tenta api.whatsapp.com)
+    setTimeout(function() {
+      window.open(linkApiWhats, '_blank');
+    }, 3000);
+  }
+
+  // Conecta a função ao link do popup
+  const whatsappPopupLink = document.getElementById('whatsappPopupLink');
+  if (whatsappPopupLink) {
+    whatsappPopupLink.addEventListener('click', function(evento) {
+      evento.preventDefault();
+      abrirWhatsApp();
+    });
+  }
+
+  // Conecta a função ao botão flutuante
+  const whatsappFloatLink = document.getElementById('whatsappFloatLink');
+  if (whatsappFloatLink) {
+    whatsappFloatLink.addEventListener('click', function(evento) {
+      evento.preventDefault();
+      abrirWhatsApp();
+    });
+  }
+</script>
+</body>
+</html>
